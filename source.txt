@@ -1,0 +1,6 @@
+https://groupietrackers.herokuapp.com/api
+https://tutorialedge.net/golang/creating-restful-api-with-golang/
+https://tutorialedge.net/golang/consuming-restful-api-with-go/
+https://groupie-tracker-lucas-pierre.herokuapp.com/groupie/
+https://www.hostinger.fr/tutoriels/quest-ce-que-json#:~:text=%C3%80%20quoi%20sert%20JSON,-%C2%AB%20Json%20logo%20%C2%BB&text=Le%20JSON%20est%20un%20format,qui%20a%20des%20fonctions%20similaires.
+http://golang.io/fr/tutoriels/ajoutez-des-fonctionnalites-a-votre-serveur-web-http-grace-aux-handlers/

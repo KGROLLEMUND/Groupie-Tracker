@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+@import url('https://fonts.googleapis.com/css?family=Knewave');
+.header {
+text-align: center;
+}
+h1 {
+    font-family: 'Sniglet', cursive;
+    color: #AFFCF4;
+    font-size: 3.1rem;
+    display: inline-block;
+    border: 1rem solid #FABBAA;
+    padding: 1.2rem 2.1rem 1.4rem;
+    border-radius: 1rem;
+    box-shadow: inset 0 0 6px #BA051A, inset 0 0 40px rgba(186,5,26, 0.3), inset 0 0 100px rgba(186,5,26, 0.5), 0 0 6px #BA051A, 0 0 40px rgba(186,5,26, 0.3), 0 0 100px rgba(186,5,26, 0.5);
+    text-shadow: 0px 0px 5px #318BF7, 0px 0px 10px #318BF7, 0px 0px 10px #318BF7, 0px 0px 80px rgba(49,139,247, 0.6), 0px 0px 100px rgba(49,139,247, 0.9);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
+  background-size: 600% 100%;
+  animation: gradient 15s linear infinite;
+  animation-direction: alternate;
+  font-family: 'Sniglet', cursive;
+  color: #AFFCF4;
+}
+
+.container {
+justify-content: center;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.6);
+display: grid;
+width: 80vw;
+max-width: 1000px;
+height: 70vw;
+max-height: 900px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 10px;
+border: none;
+border-radius: 10px;
+color: white;
+}
+
+.bodySection {
+  display: flex;
+}
+.infoSection {
+  
+  width: 200%;
+}
+.concerts {
+ 
+  width: 40%;
+}
+.mapSection{
+  flex-shrink: 0;
+  width: 60%;
+}
+.mapSection>div, .info {
+  margin: 0.5rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgb(240, 92, 92);
+  border:.15rem solid #FABBAA;
+  border-radius:1rem;
+text-align: left;
+line-height: 1.5rem;
+}
+
+.info p, ul, ol {
+margin-left: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 7rem;
+}
+
+#map {
+  width: 90%;
+  height: 90%;
+}
+
+element.style {
+  width: 255px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/Css&Html template/Css/mainStyle.css" rel="stylesheet">
+    <title>GROUPIE-TRACKER</title>
+</head>
+<body>
+
+
+<div class="heading">
+  <h1><span>Groupie-</span>Tracker</h1>
+</div>
+
+
+
+<form action="/searchApi" >
+<input type="submit" name="searchApi" id="searchApi" value="searchApi"></form>
+
+
+
+  </form>
+  </section>
+  <script>
+    var fromCD = document.getElementById("fromCD");
+    var toCD = document.getElementById("toCD");
+    var fromCDshow = document.getElementById("fromCDshow");
+    var toCDshow = document.getElementById("toCDshow");
+    fromCDshow.innerHTML = fromCD.value;
+    toCDshow.innerHTML = toCD.value
+    fromCD.oninput = function() {
+      fromCDshow.innerHTML = this.value;
+    }
+    toCD.oninput = function() {
+      toCDshow.innerHTML = this.value;
+    }
+    </script>
+</section>
+
+<section class="mainSection">
+<div class="flexContainer">
+{{range .}}
+<div class="flexItem">
+<form action="/ProfilArtist" method="POST">
+  
+<input type="image" src="{{.Image}}" class="imgBorder">
+<p><b>Nom: </b>{{.Name}}</p>
+<p><b>Date de création: </b>{{.CreationDate}}</p>
+  <p><b>Date du premier album: </b>{{.FirstAlbum}}</p>
+  <input name="relURL" value="{{.Relation}}" type ="hidden">
+  <input name="name" value="{{.Name}}" type ="hidden">
+</div>
+</form>
+{{end}}
+</div>
+</section>
+
+</body>
+</html>

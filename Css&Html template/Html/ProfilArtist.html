@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/Css&Html template/Css/ProfilArtist.css" rel="stylesheet">
+    <link rel="icon" sizes="16x16" href="{{.Image}}"> 
+    
+    
+    
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=en_US" type="text/javascript">
+    </script>
+    <section class="mapSection">
+     
+      <div id="map" style="width: 400px; height: 350px"></div>
+    </section>
+
+ 
+  <script type="text/javascript">
+      
+    
+    
+    
+    ymaps.ready(init);
+      function init(){ 
+          var myMap = new ymaps.Map("map", {
+              center: [	48.856614, 2.3522219],
+              zoom: 7
+          });
+          
+       }
+
+
+
+       
+</script>
+
+
+
+
+
+
+
+
+
+
+
+    <title>{{.Name}} INFORMATION</title>
+</head>
+<body>
+<!-- <section class="goBack">
+  <form action="/" method="POST">
+  <input type="reset" value="go back">
+</form> -->
+</section>
+<div class="container">
+<div class="header">
+  <header>
+    <h1>{{.Name}}</h1>
+  </header>
+</div>
+<section class="bodySection">
+<section class="infoSection">
+<div class="info">
+<img src="{{.Image}}" class="imgBorder" style= margin-left:40px;>
+<p><b>Nom: </b>{{.Name}}</p>
+<p><b>Date de création: </b>{{.CreationDate}}</p>
+<p><b>Date du premier album: </b>{{.FirstAlbum}}</p>
+<p><b>Les membres du groupe:</b></p>
+<ul>
+  {{range .Members}}
+  <li>{{ . }}</li>
+  {{end}}
+</ul>
+</div>
+</section>
+<section class="concerts">
+  <div class="info" style="
+    width: 255px;
+">
+    <p><b> Les concerts:</b></p>
+    <ol>
+      {{range $key, $value := .Concerts}}
+      <li class="placemark" id="placemark">{{$key}}
+        <ul>{{range $value}}
+          <li id="dates">{{.}}</li>
+          {{end}}
+        </ul>
+      </li>
+      {{end}}
+    </div>
+    </ol>
+  </div>
+</section>
+  
+</section>
+
+</section>
+</body>
+</html>

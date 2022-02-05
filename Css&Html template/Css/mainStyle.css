@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+@import url('https://fonts.googleapis.com/css?family=Knewave');
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
+  background-size: 600% 100%;
+  animation: gradient 15s linear infinite;
+  animation-direction: alternate;
+font-family: 'Sniglet', 'Helvetica Neue', sans-serif;
+color: #AFFCF4;
+}
+.heading>span {
+	display: block;
+	font-size: 2rem;
+}
+
+.mainSection {
+	float: right;
+}
+
+.flexContainer {
+    display: flex;
+	flex-wrap: wrap;
+    /*background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(67, 20, 51));
+    */justify-content: center;
+}
+
+.flexItem{
+    margin: 1.5rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgb(240, 92, 92);
+    font-size: 1vw;
+    border:.15rem solid #FABBAA;
+    border-radius:1rem;
+    line-height: 1vh;
+text-align: center;
+}
+
+.flexItem:hover {
+	transform: scale(1.15);
+}
+.imgBorder{
+	border-radius: 7rem;
+}
+
+input[type=checkbox] {
+  display: inline;
+  cursor: pointer;
+  width:30px;
+  height:30px;
+  -webkit-appearance: none;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
+}
+
+input[type='checkbox']:checked {
+  background: #ff0202;
+}
+
+input[type=text] {
+  text-align: center;
+}
+
+/* SLIDER STYLE BELOW */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background: #fabbaa;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: white;
+  cursor: pointer;
+}
+
+/*NEON HEADING*/
+.heading {
+  text-align:center;
+  vertical-align:middle;
+}
+h1 {
+    font-family: 'Sniglet', cursive;
+    color: #AFFCF4;
+    font-size: 3.1rem;
+    display: inline-block;
+    text-shadow: 0px 0px 5px #318BF7, 0px 0px 10px #318BF7, 0px 0px 10px #318BF7, 0px 0px 80px rgba(49,139,247, 0.6), 0px 0px 100px rgba(49,139,247, 0.9);
+    z-index: 1;
+    position: relative;
+}
+h3 {
+  font-size:2rem;
+  font-family: 'Knewave';
+  color:#FABBAA;
+  text-shadow:
+	0 0 6px #BA051A,
+	0 0 40px rgba(186,5,26, 0.3),
+  0 0 100px rgba(186,5,26, 0.5);
+  text-align: center;
+}
+h1 span {
+   color:#95d7d0;
+   text-shadow:0px 0px 5px #333;
+/*     animation: buzzing .4s infinite; */
+}
